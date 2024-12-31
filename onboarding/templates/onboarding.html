@@ -1,0 +1,367 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'onboarding.css' %}?v=10">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Damzy's Horizon | Grow, Connect, Thrive</title>
+</head>
+<body>
+    
+    <header class="bg-white shadow-md">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+           <a href="#"> <img src="{% static '5.png' %}" class="cursor-pointer w-[50px] mt-4"alt=""></a>
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-10 mt-6 text-black font-bold md:bg-transparent  ">
+                <ul class="flex md:flex-row flex-col md:items-center text-center md:gap-[4vw] gap-8 text-[15px]">
+                    <li>
+                        <a class="text-[#929AAB] hover:text-black" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="text-[#929AAB] hover:text-black" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="text-[#929AAB] hover:text-black" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="text-[#929AAB] hover:text-black" href="#contacts">Contacts</a>
+                    </li>
+                   
+                    <li>
+                        <a class="text-[#929AAB] hover:text-black md:hidden block" href="#">Register</a>
+                    </li>
+                    <li>
+                        <a class="text-[#929AAB] hover:text-black md:hidden block" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+              <a class="text-black  hover:text-[#929AAB] font-bold mt-3" href="#">Login</a>
+               <a href="#"><button class="bg-black text-white px-5 py-2 rounded-full hover:bg-[#929AAB] mt-3 font-bold ">Join the Horizon</button></a>
+                <!-- <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-black font-bold md:hidden">  
+
+                  jjj
+                </ion-icon> -->
+            </div>
+    </header>
+    
+
+    <div class="relative overflow-hidden bg-white sm:mt-5">
+        <div class="pb-80 pt-10 sm:pb-40 sm:pt-16 lg:pb-48 lg:pt-32">
+          <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+            <div class="sm:max-w-lg">
+              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl" data-aos="fade-up"  data-aos-once="true">The Damzy Effect</h1>
+              <p class="mt-4 text-xl text-gray-500" data-aos="fade-up"  data-aos-once="true">Hi there! I’m Damzy, and I’m excited to share my journey of personal growth, social connections, and living a meaningful life. Through stories, tips, and real conversations, I’ll inspire you to embrace your own path and thrive in every aspect of life. Let’s grow together—one step at a time.</p>
+            </div>
+            <div>
+              <div class="mt-10">
+                <!-- Decorative image grid -->
+                <div aria-hidden="true" class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+                  <div class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                    <div class="flex items-center space-x-6 lg:space-x-8">
+                      <div class="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100" data-aos="fade-up"  data-aos-once="true">
+                          <img src="{% static 'WhatsApp Image 2023-10-14 at 08.57.13.jpeg' %}" alt="" class="size-full object-cover">
+                        </div>
+                        <div class="h-64 w-44 overflow-hidden rounded-lg" data-aos="fade-up"  data-aos-once="true">
+                          <img src="{% static '365617533_1014858413163392_1652987373931964280_n.jpg' %}" alt="" class="size-full object-cover">
+                        </div>
+                      </div>
+                      <div class="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div class="h-64 w-44 overflow-hidden rounded-lg" data-aos="fade-up"  data-aos-once="true">
+                          <img src="{% static '462850939_1258918838757347_22398224518262403_n.jpg' %}" alt="" class="size-full object-cover">
+                        </div>
+                        <div class="h-64 w-44 overflow-hidden rounded-lg" data-aos="fade-up"  data-aos-once="true">
+                          <img src="{% static '358147032_1005805834068650_1423417636707625868_n.jpg' %}" alt="" class="size-full object-cover">
+                        </div>
+                        <div class="h-64 w-44 overflow-hidden rounded-lg" data-aos="fade-up"  data-aos-once="true">
+                          <img src="{% static '468125498_1286231159359448_8143126761550638729_n.jpg' %}" alt="" class="size-full object-cover">
+                        </div>
+                      </div>
+                      <div class="grid shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div class="h-64 w-44 overflow-hidden rounded-lg" data-aos="fade-up"  data-aos-once="true">
+                          <img src="{% static '319122830_926287965004970_7078171115991275953_n.jpg' %}" alt="" class="size-full object-cover">
+                        </div>
+                        <div class="h-64 w-44 overflow-hidden rounded-lg" data-aos="fade-up"  data-aos-once="true">
+                          <img src="{% static 'WhatsApp Image 2023-10-14 at 08.57.33.jpeg' %}" alt="" class="size-full object-cover">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <a href="#" class="inline-block rounded-md border border-transparent bg-black px-8 py-3 text-center font-medium text-white hover:bg-[#393E46]" data-aos="fade-up"  data-aos-once="true">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="organizers" class="bg-white py-16">
+        <div class="organizers container mx-auto px-8 md:px-5 lg:px-10">
+          <h1 class="text-center md:text-5xl text-3xl font-medium text-black pb-16" data-aos="fade-up"  data-aos-once="true">Explore My Journey</h1>
+            <div class="founder flex md:flex-row flex-col justify-center">
+                <div class="founder-img w-[100%] md:w-[40%]  lg:w-[30%]">
+                    <img class="rounded-[20px] shadow-lg max-sm:w-[400px]" src="{% static 'WhatsApp Image 2023-10-14 at 08.57.48.jpeg' %}" alt="" data-aos="fade-up"  data-aos-once="true">
+                </div>
+                <div class="founder-info poppins-regular text-gray-700 text-[16px] md:text-[12px] lg:text-[15px] xl:text-[17px] md:px-5 lg:px-10 lg:[70%]  xl:w-[60%] md:w-[100%] max-md:pt-[15px]" data-aos="fade-up"  data-aos-once="true">
+                  <p>
+                    I am a dedicated social media influencer, content creator, and proud Christian, driven by a passion for making a positive impact. Currently an undergraduate at the prestigious Ekiti State University, specializing in the sciences, I am committed to leveraging my skills and platform to inspire and uplift others.
+
+                    I firmly believe that everyone is born with a purpose, and mine is to touch lives through meaningful content, empower individuals to discover their unique talents, and bring hope and joy to those facing challenges. Beyond this, I am deeply invested in advancing healthcare in Nigeria, with a vision to contribute to the improvement of our medical systems and overall well-being.
+                    
+                    Let’s embark on this journey together to create a better, healthier, and more inspired world.
+                  </p>
+                 
+                  <h1 class="poppins-bold text-black font-bold text-[20px] pt-3">Oyindamola Titilayo</h1>
+                  <h2 class="text-[#393E46] font-semibold">Social Media Influencer | Science Enthusiast | Visionary for Change</h2>
+                </div>
+            </div>
+            <div class="founder flex md:flex-row-reverse flex-col mt-20 justify-center md:p-24 p-8 rounded-[30px] bg-[#15181b]">
+              <div class="founder-img  md:w-[50%]  lg:w-[50%]">
+                  <img class="rounded-[20px] shadow-lg w-[400px]" src="{% static '3.png' %}" alt="" data-aos="fade-up"  data-aos-once="true">
+              </div>
+              <div class="founder-info font-medium text-white text-[15px] md:text-[12px] lg:[text-15px] xl:text-[17px] md:px-5 lg:px-10 lg:[70%]  xl:w-[60%] md:w-[100%] max-md:pt-[15px]" data-aos="fade-up"  data-aos-once="true">
+
+                <p>
+                  The vision behind Damzy's Horizon is to create a space where individuals like you can become an integral part of my life and journey. This platform is designed to foster genuine connections, allowing you to engage with me more from anywhere in the world. Through Damzy's Horizon, you’ll have access to my daily stories, thoughts, and experiences, as well as exclusive content curated specifically for you.
+
+Beyond just connecting with me, this space is a hub for like-minded individuals to interact, share ideas, and build meaningful relationships. Whether you’re seeking inspiration, entertainment, or a sense of community, Damzy's Horizon is here to bridge the gap, bringing us closer together and creating a network of people who thrive on positivity, creativity, and shared purpose.
+
+Welcome to a journey of connection, growth, and discovery—together, we can build something truly remarkable.
+                  </p>
+               
+    
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <div class="overflow-hidden bg-white mx-auto container">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div class="lg:pr-8 lg:pt-4">
+            <div class="lg:max-w-lg">
+             
+              <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl" data-aos="fade-up"  data-aos-once="true">Mission & Values</p>
+              <p class="mt-6 text-lg/8 text-gray-600" data-aos="fade-up"  data-aos-once="true">At Damzy's Horizon, our mission is to inspire, uplift, and connect people across the globe by sharing meaningful stories, creating impactful content, and fostering a community of like-minded individuals. We aim to touch lives with positivity, help others uncover their unique talents, and bring hope to those facing challenges, all while striving to contribute to a healthier, more compassionate world.</p>
+              <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
+                <div class="relative">
+                  <dt class="inline font-bold text-gray-900">
+                    
+                    Authenticity:
+                  </dt>
+                  <dd class="inline">We believe in staying true to ourselves and sharing genuine experiences that resonate with others.</dd>
+                </div>
+                <div class="relative" data-aos="fade-up"  data-aos-once="true">
+                  <dt class="inline font-bold text-gray-900">
+                    Empowerment:
+                  </dt>
+                  <dd class="inline">Our goal is to inspire individuals to discover their potential and live purposeful, fulfilling lives.</dd>
+                </div>
+                <div class="relative" data-aos="fade-up"  data-aos-once="true">
+                  <dt class="inline font-bold text-gray-900">
+                    Connection:
+                  </dt>
+                  <dd class="inline">We prioritize building a supportive and inclusive community where people can share ideas, find encouragement, and grow together.</dd>
+                </div>
+                <div class="relative" data-aos="fade-up"  data-aos-once="true">
+                  <dt class="inline font-bold text-gray-900">
+                    Compassion:
+                  </dt>
+                  <dd class="inline">At the heart of our journey is the desire to bring joy, hope, and smiles to those in need.</dd>
+                </div>
+                <div class="relative" data-aos="fade-up"  data-aos-once="true">
+                  <dt class="inline font-bold text-gray-900">
+                    Impact:
+                  </dt>
+                  <dd class="inline">We are committed to creating meaningful content that not only entertains but also sparks positive change in people’s lives and in society.</dd>
+                </div>
+                <div class="relative" data-aos="fade-up"  data-aos-once="true">
+                  <dt class="inline font-bold text-gray-900">
+                    Excellence:
+                  </dt>
+                  <dd class="inline">Every piece of content and every interaction is crafted with care and dedication, striving to exceed expectations.</dd>
+                </div>
+                
+              </dl>
+            </div>
+          </div>
+          <img src="{% static '365617533_1014858413163392_1652987373931964280_n.jpg' %}" alt="Product screenshot" class="w-[30rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[37rem] md:-ml-4 lg:-ml-0" data-aos="fade-up"  data-aos-once="true">
+        </div>
+      </div>
+    </div>
+
+     
+    <div class="sm:px-14 px-5 grid gap-8 grid-cols-1  mt-14 md:grid-cols-2 py-20 mx-auto bg-gray-100 text-gray-900 rounded-lg">
+        <div class="flex flex-col justify-center">
+            <div>
+                <h2 class="text-4xl lg:text-5xl font-bold leading-tight" data-aos="fade-up"  data-aos-once="true">
+                    Lets talk about everything!
+                </h2>
+                <div class="text-gray-700 mt-8" data-aos="fade-up"  data-aos-once="true">
+                    Hate forms? Send us an&nbsp;
+                    <a class="underline" href="mailto:someone@gmail.com">
+                        email
+                    </a>
+                    instead.
+                </div>
+            </div>
+            <div class="mt-12 text-center" data-aos="fade-up"  data-aos-once="true">
+                <img class=" w-full rounded-[20px]" src="{% static 'WhatsApp Image 2023-10-14 at 08.57.20.jpeg' %}" alt="Contact" />
+            </div>
+        </div>
+        <form> 
+            <div data-aos="fade-up"  data-aos-once="true">
+                <span class="uppercase text-sm text-gray-600 font-bold">
+                    Full Name
+                </span>
+                <input
+                    class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
+                    type="text"
+                    placeholder="Enter your Name"
+                    required
+                />
+            </div>
+            <div class="mt-8" data-aos="fade-up"  data-aos-once="true">
+                <span class="uppercase text-sm text-gray-600 font-bold">
+                    Email
+                </span>
+                <input
+                    class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
+                    type="email"
+                    placeholder="Enter your email address"
+                    required
+                />
+            </div>
+            <div class="mt-8" data-aos="fade-up"  data-aos-once="true">
+                <span class="uppercase text-sm text-gray-600 font-bold">
+                    Phone Number
+                </span>
+                <input
+                    class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
+                    type="phone"
+                    placeholder="Enter your Phone Number including country code"
+                    required
+                />
+            </div>
+            <div class="mt-8" data-aos="fade-up"  data-aos-once="true">
+                <span class="uppercase text-sm text-gray-600 font-bold">
+                    Message
+                </span>
+                <textarea
+                    class="w-full h-32 bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
+                    placeholder="Enter your Message"
+                    required
+                ></textarea>
+            </div>
+            <div class="mt-8" data-aos="fade-up"  data-aos-once="true">
+                <button data-aos="fade-up"  data-aos-once="true"
+                    class="uppercase text-sm font-bold tracking-wide bg-black text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-[#393E46]"
+                    type="submit"
+                >
+                    Send Message
+                </button>
+            </div>
+        </form>
+    </div>
+     
+    <div class="relative isolate overflow-hidden bg-black py-16 sm:py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+          <div class="max-w-xl lg:max-w-lg">
+            <h2 class="text-4xl font-semibold tracking-tight text-white" data-aos="fade-up"  data-aos-once="true">Stay Connected with Damzy’s Horizon</h2>
+            <p class="mt-4 text-lg text-gray-300" data-aos="fade-up"  data-aos-once="true">Never miss a moment! Subscribe to our newsletter and be the first to receive exclusive updates, inspiring stories, and personalized content delivered straight to your inbox.</p>
+            <div class="mt-6 flex max-w-md gap-x-4" data-aos="fade-up"  data-aos-once="true">
+              <label for="email-address" class="sr-only">Email address</label>
+              <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-500 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6" placeholder="Enter your email">
+              <button type="submit" class="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">Subscribe</button>
+            </div>
+          </div>
+          <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2" data-aos="fade-up"  data-aos-once="true">
+            <div class="flex flex-col items-start">
+              <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                </svg>
+              </div>
+              <dt class="mt-4 text-base font-semibold text-white" data-aos="fade-up"  data-aos-once="true">Weekly articles</dt>
+              <dd class="mt-2 text-base/7 text-gray-400">Stay inspired and informed with our carefully curated weekly articles. From personal growth tips to uplifting stories and community highlights, each article is designed to add value to your life and keep you engaged with Damzy’s journey.</dd>
+            </div>
+            <div class="flex flex-col items-start" data-aos="fade-up"  data-aos-once="true">
+              <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+                <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.575 1.575 0 1 0-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 0 1 3.15 0v1.5m-3.15 0 .075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 0 1 3.15 0V15M6.9 7.575a1.575 1.575 0 1 0-3.15 0v8.175a6.75 6.75 0 0 0 6.75 6.75h2.018a5.25 5.25 0 0 0 3.712-1.538l1.732-1.732a5.25 5.25 0 0 0 1.538-3.712l.003-2.024a.668.668 0 0 1 .198-.471 1.575 1.575 0 1 0-2.228-2.228 3.818 3.818 0 0 0-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0 1 16.35 15m.002 0h-.002" />
+                </svg>
+              </div>
+              <dt class="mt-4 text-base font-semibold text-white">No spam</dt>
+              <dd class="mt-2 text-base/7 text-gray-400">Your inbox is safe with us! We value your time and privacy, which is why we promise only to send meaningful updates and exclusive content. No clutter, no distractions—just content that matters to you.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+        <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[[#393E46]] to-[#393E46] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+    </div>
+    
+     
+    <footer class="text-gray-600 body-font">
+      <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <img class="w-[50px]" src="{% static '5.png' %}" alt="">
+          <span class="ml-3 text-xl">Damzy's Horizon</span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2025 Damzy's Horizon — @
+          <a href="https://web.facebook.com/itzmhiz.haryobahmih/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Kwèêñ Hãy Why </a>
+        </p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+     
+    
+      <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e){
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[1%]')
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+          AOS.init({
+            duration: 1000,
+            once: true,
+          });
+        </script>
+    <script src="{% static 'onboarding.js' %}?v=4"></script>
+</body>
+</html>
